@@ -493,6 +493,9 @@ button:hover{
   .module-block__item{
     font-size: 16px;
   }
+  .card .buttons {
+    padding-top: 25px;
+  }
 }
 
 @media(max-width: 700px){
