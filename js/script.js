@@ -8,6 +8,13 @@
 //   toggleSlider();
 // }
 //
+$(document).ready(function() {
+    $('#sidebar a').click(function(){
+      $('#sidebar a').removeClass('active');
+      $(this).addClass('active');
+    })
+  });
+
 function toggleSlider() {
 //   var width = window.innerWidth;
 //   console.log(width);

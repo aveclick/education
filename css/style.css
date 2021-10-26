@@ -84,7 +84,7 @@ h1{
   padding-left: 17px;
 }
 
-.sidebar li.active a{
+.sidebar a.active{
   color: #272727;
   border-left: 2px solid #272727;
   padding-top: 6px;
@@ -143,6 +143,85 @@ h1{
   height: 240px;
   margin-bottom: 24px;
   margin-right: 23px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover{
+  background-color: #272727;
+  background-image: none!important;
+}
+
+.card:hover .desc{
+  display: block;
+}
+
+.card:hover .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .buttons{
+  display: none;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.card .desc{
+  display: none;
+  padding-top: 10px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #BDBDBD;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex: 1 1 auto;
+}
+
+.card .no-desc{
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.card .button{
+  background-color: #585858;
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 13px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  width: 132px;
+  padding: 16px 0;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+button{
+  background-color: #585858;
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 13px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  width: 132px;
+  padding: 16px 0;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+button:hover{
+  background-color: #1758FF;
+}
+
+.card .button:hover{
+  background-color: #1758FF;
 }
 
 .card.slick-slide{
@@ -363,7 +442,7 @@ h1{
   padding-right: 10px;
 }
 
-.module-block__item.active:hover .continue-num, .module-block__item.active:hover .continue{
+.module-block__item:hover .continue-num, .module-block__item:hover .continue{
   display: flex;
 }
 
@@ -373,14 +452,9 @@ h1{
 }
 
 .module-block__item.inactive img{
-  display: none;
   right: 16px;
   top: 24px;
   position: absolute;
-}
-
-.module-block__item.inactive:hover img{
-  display: flex;
 }
 
 .module-block__item.inactive:hover{
