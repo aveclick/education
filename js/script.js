@@ -35,7 +35,7 @@ $(".slider").not('.slick-initialized').slick({
   arrows: false,
   slidesToShow: 2,
   variableWidth: true,
-    infinite: false,
+  infinite: false,
 });
 };
 }
