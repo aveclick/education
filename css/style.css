@@ -185,7 +185,7 @@ h1{
 
 .card .no-desc{
   flex: 1 1 auto;
-  height: 100%;
+  height: 95px;
 }
 
 .card .button{
