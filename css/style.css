@@ -202,24 +202,6 @@ h1{
   flex: 0 0 auto;
 }
 
-button{
-  background-color: #585858;
-  color: #fff;
-  font-size: 11px;
-  font-style: normal;
-  line-height: 13px;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  width: 132px;
-  padding: 16px 0;
-  text-align: center;
-  flex: 0 0 auto;
-}
-
-button:hover{
-  background-color: #1758FF;
-}
-
 .card .button:hover{
   background-color: #1758FF;
 }
@@ -386,37 +368,10 @@ button:hover{
   bottom: 24px;
 }
 
-.repeat{
-  position: absolute;
-  bottom: 24px;
-  left: 16px;
-  display: none;
-}
-
-.repeat-num{
-  position: absolute;
-  bottom: 24px;
-  right: 16px;
-  display: none;
-}
-
-.module-block__item:hover .repeat, .module-block__item:hover .repeat-num{
-  display: flex;
-}
-
 .module-block__item:hover{
   background-color: #272727;
   color: #fff;
   cursor: pointer;
-}
-
-.repeat h5, .repeat-num h5{
-  font-size: 11px;
-  font-style: normal;
-  line-height: 13px;
-  letter-spacing: 0em;
-  color: #fff;
-  padding-right: 10px;
 }
 
 .continue{
